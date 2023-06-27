@@ -121,7 +121,10 @@ age>=18 ? console.log("U r age is low ") : console.log("age is higher ");
 let store_value=age>18 ? console.log("u r is not good") : console.log("U can drink");
 console.log(`u r eligible to ${age >= 18 ? " drive " : " can't drive"}`);
 
+//*************************Example to practice*******************/
 const bill=275;
 let tip=.15 * bill;
-let total_bill=bill >= 50 || bill <= 300 ? ` ${tip+bill}` :` ur bill : ${.20*bill + bill}`;
+let total_bill=bill >= 50 && bill <= 300 ? ` ${tip+bill}` :` ur bill : ${.20*bill + bill}`;
 console.log(total_bill);
+
+
