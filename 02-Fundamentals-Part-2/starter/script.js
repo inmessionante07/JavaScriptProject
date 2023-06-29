@@ -49,10 +49,24 @@ console.log(calAge);
 //*********Function without the name called anonomyous function************/
 //FUNCTION EXPRESSION
 // const age4=calAge2(2000);//ReferenceError: Cannot access 'calAge2' before initialization
-console.log(age4);
+// console.log(age4);
 const calAge2=function (birthYear) {
     return 2023 - birthYear
 }
 const age2=calAge2(1999);
 console.log(calAge,age2);
 
+
+/**********Arrow function */
+// value strore=parameters=> function
+const calAge4=birthYear=> 2023-birthYear
+
+console.log(calAge4(1990));
+
+
+const yearuntilRetirement=birthYear=>{
+    const age=2023-birthYear;
+    const retirement=65-age
+}
+ 
+console.log(yearuntilRetirement(1991));
